@@ -99,9 +99,11 @@ Whereas the runtime of Sieve of Eratosthenes algorithm is:
   O(nlog(log(n)))
 ```
 
-Almost the same runtime except one is division and one is multiplication. This is because multiplication breaks down into multiple additions and division breaks down into multiple subtractions. The difference is that additions in multiplication can be done in parallel whereas division, you cannot do the next subtraction until you finish the previous one and do a comparison. Therefore, division is more expensive than multiplication.
+Almost the same runtime except one is division and one is multiplication. 
 
-Thus, taking the average of 10 runs on both algorithms proves this concept perfectly.
+Mathematically speaking division is more expensive than multiplication because multiplication breaks down into multiple additions and division breaks down into multiple subtractions. The difference is that additions in multiplication can be done in parallel whereas division, you cannot do the next subtraction until you finish the previous one and do a comparison.
+
+Thus, taking the average of 10 runs on both algorithms proves this concept.
 
 The Sieve of Atkin algorithm runs for``` 1.952113s ```on an average of 10 runs.
 
