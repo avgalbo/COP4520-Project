@@ -103,15 +103,8 @@ Almost the same runtime except one is division and one is multiplication. This i
 
 Thus, taking the average of 10 runs on both algorithms proves this concept perfectly.
 
-The Sieve of Atkin algorithm runs for
-```txt
-  1.952113s
-```
-on an average of 10 runs.
+The Sieve of Atkin algorithm runs for```txt 1.952113s ```on an average of 10 runs.
 
-Whereas the Sieve of Eratosthenes algorithm runs for
-```txt
-  1.688254s
-```
+Whereas the Sieve of Eratosthenes algorithm runs for```txt 1.688254s ```
 
 Therefore, the Sieve of Eratosthenes algorithm is slightly more efficient due to experimental evaluation.
