@@ -10,9 +10,9 @@ Compile and Run Instructions:
 1. In a terminal, navigate to the location of primes.cpp
 2. To compile the program, run the following command: (Note the addition of "" in the compile command is necessary because the C++11 standard library includes multithreading library. Without it the program will not compile)
     g++ -std=c++11 primes.cpp
-4. To run the program, use the following command:
+3. To run the program, use the following command:
     ./a.out
-5. A bonus shortcut: To compile and run the program on the same line, use the following command:
+4. A bonus shortcut: To compile and run the program on the same line, use the following command:
     g++ -std=c++11 primes.cpp && ./a.out
 
 Output:
