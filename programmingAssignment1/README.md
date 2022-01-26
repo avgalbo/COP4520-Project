@@ -12,11 +12,11 @@ Source code name: primes.cpp
 ```bash
     g++ -std=c++11 primes.cpp
 ```
-4. To run the program, use the following command:
+3. To run the program, use the following command:
 ```bash
     ./a.out
 ```
-5. A bonus shortcut: To compile and run the program on the same line, use the following command:
+4. A bonus shortcut: To compile and run the program on the same line, use the following command:
 ```bash
     g++ -std=c++11 primes.cpp && ./a.out
 ```
