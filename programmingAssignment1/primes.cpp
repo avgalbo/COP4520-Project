@@ -100,8 +100,9 @@ void runThread(int n)
   start = clock();
 
   for(int i = 0; i < NUM_THREADS; i++)
-  {
-    myThread[i] = thread(sieveOfEratosthenes, n);
+  {  
+    myThread[i] = thread(sieveOfEratosthenes, n); // More Efficent
+    // myThread[i] = thread(sieveOfAtkin, n); // Less efficent
 
     n *= 10;
   }
