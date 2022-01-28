@@ -103,7 +103,6 @@ void runThread(int n)
   {
     myThread[i] = thread(sieveOfEratosthenes, n);
 
-    // set n to the next power
     n *= 10;
   }
 
@@ -161,7 +160,6 @@ void printPrimesToFile()
     file << topPrimes[i];
 
     file << ((i == NUM_TOP_PRIMES - 1) ? "\n" : ", ");
-
   }
 }
 
