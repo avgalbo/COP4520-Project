@@ -42,7 +42,6 @@ public class ParallelMergeSort
         SortTask rightSortTask = new SortTask(right);
 
         // Invoke declared tasks
-        //invokeAll(left, right);
         invokeAll(leftSortTask, rightSortTask);
 
         // Merge the first half with the second half into our array
