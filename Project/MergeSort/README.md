@@ -118,4 +118,4 @@ Array size 100000000 Parallel: Total computation time = 4484ms
 Array size 100000000 Not Parallel: Total computation time = 6746ms
 ```
 
-Notice how for array sizes ```10 - 1000000```, the sizes are so small that spinning up these threads is a waste of time. However, once the array size is ```10000000 or 100000000```, this is now utilizing the threads in the machine for a more efficient computation time.
+Notice how for array sizes ```10 - 1000000```, the sizes are so small that spinning up these threads is a waste of time. However, once the array size is ```10000000 or 100000000```, this is now worth utilizing the threads in the machine for a more efficient computation time.
