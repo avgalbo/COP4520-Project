@@ -8,7 +8,7 @@ Source code name: ParallelMergeSort.java
 
 ## Compile and Run Instructions
 
-1. In a terminal, navigate to the location of ParallelMergeSort.java using the
+1. In a terminal, navigate to the location of ParallelMergeSort.java using the command:
 ```bash
     cd
 ```
@@ -40,12 +40,12 @@ Since the only difference between the parallel implementation and the standard i
 
 With that said the runtime for both algorithms remain the same.
 
-Let ```T(n)``` be the running time of Merge sort of input size n. Then we have:
+Let ```T(n)``` be the running time of Merge sort of input size ```n```. Then we have:
 ```txt
   T(n) = (Time in step 1) + (Time in step 2) + (Time in step 3)
 ```
 
-We notice that step 1 and step 2 are sorting problems as well but of size n/2, and that the last step runs in O(n) time, we get the following equation for T(n)
+We notice that step 1 and step 2 are sorting problems as well but of size ```n/2```, and that the last step runs in ```O(n)``` time, we get the following equation for ```T(n)```.
 
 ```txt
   T(n) = T(n/2) + T(n/2) + O(n)
@@ -65,7 +65,10 @@ The generalized form after the kth application we get:
   T(n) = 2kT(n/2^k) + kn
 ```
 
-We assume ```T(n) = 1``` so we can solve for ```T(n)```. We also have ```T(n/2^k)```. Solving for k we get ```n = 2^k = k = log_2(n)```
+We assume ```T(n) = 1``` so we can solve for ```T(n)```. We also have ```T(n/2^k)```. Solving for ```k``` we get:
+```txt
+    n = 2^k = k = log_2(n)
+```
 
 We now find:
 ```txt
@@ -79,7 +82,7 @@ Therefore the run time for the merge sort algorithm is:
 
 ## Experimental evaluation
 
-Before I display the results, This was tested on an Macbook pro intel i9 processor with 16gb of ram.
+Before I display the results, This experiment was tested on an Macbook pro intel i9 processor with 16gb of ram.
 
 Results may differ on machines with different cores.
 
