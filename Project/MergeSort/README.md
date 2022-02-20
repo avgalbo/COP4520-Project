@@ -91,7 +91,7 @@ We tested array sizes:
   10, 100, 1,000, 10,000, 100,000, 1,000,000, 10,000,000, 100,000,000
 ```
 
-Our results in execution time were:
+Our results in computation time were:
 ```txt
 Array size 10 Parallel: Total computation time = 6ms
 Array size 10 Not Parallel: Total computation time = 0ms
