@@ -4,7 +4,6 @@ public class TestCases
   public static long endTime;
   public static int [] array;
 
-
   public static int [] createArray(int n)
   {
     array = new int[n];
@@ -15,10 +14,8 @@ public class TestCases
     return array;
   }
 
-  public static void testSize10()
+  public static void computation(int [] array)
   {
-    array = createArray(10);
-
     startTime = System.currentTimeMillis();
     ParallelMergeSort.parallelMergeSort(array);
     endTime = System.currentTimeMillis();
@@ -30,125 +27,54 @@ public class TestCases
     endTime = System.currentTimeMillis();
 
     System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+  }
+
+  public static void testSize10()
+  {
+    array = createArray(10);
+    computation(array);
   }
 
   public static void testSize100()
   {
     array = createArray(100);
-
-    startTime = System.currentTimeMillis();
-    ParallelMergeSort.parallelMergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
-    startTime = System.currentTimeMillis();
-    MergeSort.mergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    computation(array);
   }
 
   public static void testSize1000()
   {
     array = createArray(1000);
-
-    startTime = System.currentTimeMillis();
-    ParallelMergeSort.parallelMergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
-    startTime = System.currentTimeMillis();
-    MergeSort.mergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    computation(array);
   }
 
   public static void testSize10000()
   {
     array = createArray(10000);
-
-    startTime = System.currentTimeMillis();
-    ParallelMergeSort.parallelMergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
-    startTime = System.currentTimeMillis();
-    MergeSort.mergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    computation(array);
   }
 
   public static void testSize100000()
   {
     array = createArray(100000);
-
-    startTime = System.currentTimeMillis();
-    ParallelMergeSort.parallelMergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
-    startTime = System.currentTimeMillis();
-    MergeSort.mergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    computation(array);
   }
 
   public static void testSize1000000()
   {
     array = createArray(1000000);
-
-    startTime = System.currentTimeMillis();
-    ParallelMergeSort.parallelMergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
-    startTime = System.currentTimeMillis();
-    MergeSort.mergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    computation(array);
   }
 
   public static void testSize10000000()
   {
     array = createArray(10000000);
-
-    startTime = System.currentTimeMillis();
-    ParallelMergeSort.parallelMergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
-    startTime = System.currentTimeMillis();
-    MergeSort.mergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    computation(array);
   }
 
   public static void testSize100000000()
   {
     array = createArray(100000000);
-
-    startTime = System.currentTimeMillis();
-    ParallelMergeSort.parallelMergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
-    startTime = System.currentTimeMillis();
-    MergeSort.mergeSort(array);
-    endTime = System.currentTimeMillis();
-
-    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    computation(array);
   }
 
   public static void main(String [] args)
