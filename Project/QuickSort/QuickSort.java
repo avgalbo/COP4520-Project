@@ -1,17 +1,17 @@
 public class QuickSort
 {
-    public static void quickSort(int [] array, int low, int high)
+    public static void quickSort(int low, int high, int[] array)
     {
         if (low < high) 
         {
             // partitioningIdx is partitioning index, arr[p]
             // is now at right place
-            int partitioningIdx = partition(array, low, high);
+            int partitioningIdx = partition(low, high, array);
 
             // Separately sort elements before
             // partition and after partition
-            quickSort(array, low, partitioningIdx - 1);
-            quickSort(array, partitioningIdx + 1, high);
+            quickSort(low, partitioningIdx - 1, array);
+            quickSort(partitioningIdx + 1, high, array);
         }
     }
 
@@ -22,7 +22,7 @@ public class QuickSort
         array[j] = temp;
     }
 
-    public static int partition(int [] array, int low, int high)
+    public static int partition(int low, int high, int[] array)
     {
         // pivot point
         int pivot = array[high];
@@ -38,7 +38,6 @@ public class QuickSort
             // than the pivot
             if (array[j] < pivot) 
             {
-
                 // Increment index of
                 // smaller element
                 i++;
@@ -49,4 +48,3 @@ public class QuickSort
         return (i + 1);
     }
 }
-

@@ -21,18 +21,18 @@ public class TestCases
 
   public static void computation(int start, int end, int [] array)
   {
-    startTime = System.currentTimeMillis();
-    ForkJoinPool pool = new ForkJoinPool();
-    pool.invoke(new QuickSortMultiThreading(start, end, array));
-    endTime = System.currentTimeMillis();
-
-    System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
-
     // startTime = System.currentTimeMillis();
-    // QuickSort.quickSort(array, start, end);
+    // ForkJoinPool pool = new ForkJoinPool();
+    // pool.invoke(new QuickSortMultiThreading(start, end, array));
     // endTime = System.currentTimeMillis();
 
-    // System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
+    // System.out.println("\nArray size " + array.length + " Parallel: Total computation time = " + (endTime - startTime) + "ms");
+
+    startTime = System.currentTimeMillis();
+    QuickSort.quickSort(start, end, array);
+    endTime = System.currentTimeMillis();
+
+    System.out.println("Array size " + array.length + " Not Parallel: Total computation time = " + (endTime - startTime) + "ms");
   }
 
   public static void testSize10()
