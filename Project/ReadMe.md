@@ -46,7 +46,7 @@ The space complexity is O(logn).
 NOTE: Through trial and error and debugging, we found out that the parallel quick sort is not efficient if the values are already sorted or if there are too many duplicates in the given array.
 
 -- Recurrence Relation--
-Let ```T(n)``` be the running time of Merge sort of input size ```n```. Then we have:
+Let ```T(n)``` be the running time of Quick sort of input size ```n```. Then we have:
 ```txt
   T(n) = (Time in step 1) + (Time in step 2) + (Time in step 3)
 ```
@@ -81,7 +81,7 @@ We now find:
   T(n) = nT(1) + nlog_2n
 ```
 
-Therefore the run time for the merge sort algorithm is:
+Therefore the run time for the quick sort algorithm is:
 ```txt
   O(nlog(n))
 ```
