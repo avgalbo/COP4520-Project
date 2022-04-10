@@ -18,15 +18,15 @@ Source code name: QuickSortMultiThreading.java
 ```
 3. To run the program, use the following command:
 ```bash
-    java TestCases
+    java TestCases.java
 ```
 
 ## Output
 
 The output will display to the console in the following format:
 ```txt
-Array size <n> Parallel: Total computation time = <n>ms
 Array size <n> Not Parallel: Total computation time = <n>ms
+Array size <n> Parallel: Total computation time = <n>ms
 ```
 
 ## Proof of Correctness
