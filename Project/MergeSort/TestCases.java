@@ -57,7 +57,7 @@ public class TestCases
     int n = 1000;
     array = createArray(n);
     sequentialComputation(array);
-    array = createArray(10);
+    array = createArray(n);
     parallelComputation(array);
     System.out.print("\n");
   }
